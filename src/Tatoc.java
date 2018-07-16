@@ -59,7 +59,8 @@ public class Tatoc {
 	    	driver.findElement(By.xpath("/html/body/div/div[2]/a[1]")).click();
 	    	token = driver.findElement(By.id("token")).getText();
 	    	System.out.println("Token = " + token);
-	    	
+	    	Cookie ck = new Cookie("Token", token, winHandleBefore);
+	    	driver.findElement(By.xpath("/html/body/div/div[2]/a[2]")).click();
 	    	
 	}
 
